@@ -162,7 +162,7 @@ def check_total_value():
     for value in inventory.values():
         inventory_value += value["quantity"] * value["price"]
 
-    print(f'Total inventory value: {inventory_value:.2f}')
+    print(f'\nTotal inventory value: {inventory_value:.2f}')
 
 
 def find_low_stock():
@@ -208,7 +208,7 @@ def main():
         print("6. Find items with low stock")
         print("7. Exit")
 
-        choice = input("\nMake a choice: ").strip()
+        choice = input("\nEnter your choice: ").strip()
 
         try:
             choice = int(choice)
