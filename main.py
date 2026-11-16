@@ -19,7 +19,7 @@ def add_item():
     Validates that the ID is unique and that quantities and
     prices are non-negative numbers.
     """
-    print("Adding a new item")
+    print("\nAdding a new item")
 
     item_id = input("Enter item ID (unique integer): ").strip()
     if not item_id.isdigit():
@@ -62,7 +62,7 @@ def add_item():
         "price": ppu
     }
 
-    print(f"Item '{item_name}' added successfully!")
+    print(f"\nItem '{item_name}' added successfully!")
 
 
 def update_item():
@@ -70,7 +70,7 @@ def update_item():
     Allows the user to update the name, quantity, and price of
     an item in the inventory.
     """
-    print("Updating Item Details")
+    print("\nUpdating Item Details")
 
     try:
         item_id = int(input("Enter item ID to update: "))
@@ -111,7 +111,7 @@ def update_item():
             print("Invalid input! Enter a valid number for price.")
             return
 
-    print("Item updated successfully!")
+    print("\nItem updated successfully!")
 
 
 def remove_item():
@@ -119,7 +119,7 @@ def remove_item():
     Prompts for an item ID and deletes the matching entry
     if it exists.
     """
-    print("Removing an Item")
+    print("\nRemoving an Item")
 
     try:
         item_id = int(input("Enter the ID of the item to remove: ").strip())
@@ -138,7 +138,7 @@ def view_inventory():
     Exhibits inventory item's ID, name, quantity, price, and total value.
     If no item is present, it prints "No items in inventory".
     """
-    print("Current inventory:")
+    print("\nCurrent inventory:")
     if len(inventory) > 0:
         print("-" * 60)
         print(f'{"ID":<7}{"Name":<15}{"Quantity":>5}{"Price":>12}{"Total Value":>18}')
@@ -169,7 +169,7 @@ def find_low_stock():
     """
     Enables the user to identify items with low stock by choosing a threshold.
     """
-    print("Checking for Low Stock Items")
+    print("\nChecking for Low Stock Items")
 
     try:
         threshold = int(input("Enter the low stock threshold: ").strip())
@@ -200,7 +200,7 @@ def main():
     validating user choices, and calling the requested functions.
     """
     while True:
-        print("1. Add a new item")
+        print("\n1. Add a new item")
         print("2. Update item details")
         print("3. Remove an item")
         print("4. View inventory")
@@ -208,7 +208,7 @@ def main():
         print("6. Find items with low stock")
         print("7. Exit")
 
-        choice = input("Make a choice: ").strip()
+        choice = input("\nMake a choice: ").strip()
 
         try:
             choice = int(choice)
