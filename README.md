@@ -3,7 +3,19 @@
 A command-line application built in Python that allows users to manage a store or warehouse inventory stored in a dictionary.
 
 ## Features
+- **Add a new item:** Store items with a unique ID, name, quantity, and price per unit.
+- **Update item details:** Modify an existing item's name, quantity, or price (or press Enter to keep current values).
+- **Remove an item:** Delete an item from the inventory by its ID.
+- **View inventory:** Display all items in a formatted table with calculated total values per item.
+- **Check total inventory value:** Calculate the combined value of all stock.
+- **Find low-stock items:** Search for items whose quantity falls below a chosen threshold.
 
+## How to Run
+1. Make sure you have Python 3 installed on your computer.
+2. Download or clone this repository to your local machine.
+3. Open your terminal in the project folder and run:
+   ```bash
+   python3 main.py
 
 ## Example Usage
 
