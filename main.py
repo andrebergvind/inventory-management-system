@@ -229,10 +229,10 @@ def main():
                 print("Goodbye!")
                 break
             else:
-                print("Invalid option! Please choose a valid number.")
+                print("Invalid option! Please choose a number between 1 and 7.")
 
         except ValueError:
-            print("Invalid option! Please choose a valid number.")
+            print("Error: Please choose a valid number.")
 
 
 if __name__ == "__main__":
